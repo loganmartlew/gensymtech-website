@@ -1,0 +1,26 @@
+{
+  "name": "gensymtech-site",
+  "version": "1.0.0",
+  "description": "GensymTech Website",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganmartlew/gensymtech-website.git"
+  },
+  "author": "Logan Martlew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loganmartlew/gensymtech-website/issues"
+  },
+  "homepage": "https://github.com/loganmartlew/gensymtech-website#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.30.0"
+  }
+}

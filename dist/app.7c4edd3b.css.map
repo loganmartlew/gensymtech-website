@@ -1,0 +1,1 @@
+{"mappings":"AAAA,2EAA2E;A;AAE3E;EACE,iCAAiC;AACnC","sources":["./src/styles/style.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');\r\n\r\nh1 {\r\n  font-family: 'Bungee', sans-serif;\r\n}\r\n"],"names":[],"version":3,"file":"app.7c4edd3b.css.map","sourceRoot":"/__parcel_source_root/"}
