@@ -1,5 +1,436 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans&display=swap");
+:root {
+  --bg-color: #343434;
+  --color-dark: #1c1c1c;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+header #header-icon {
+  width: 200px;
+}
+header #header-title {
+  background: #9100ff;
+  background: linear-gradient(90deg, #9100ff 0%, #090979 50%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+  text-align: center;
+}
+
+.card {
+  height: 600px;
+  width: 400px;
+  margin: 0 15px 50px 15px;
+  background-image: url(landscape.17e5ddfe.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.41);
+  overflow: hidden;
+}
+.card:nth-child(1) h2 {
+  background: #002bff;
+  background: linear-gradient(90deg, #002bff 0%, #2ebfff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(2) h2 {
+  background: #00ffc2;
+  background: linear-gradient(90deg, #00ffc2 0%, #47f9ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(3) h2 {
+  background: #a600ff;
+  background: linear-gradient(90deg, #a600ff 0%, #4747ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(4) h2 {
+  background: #0052ff;
+  background: linear-gradient(90deg, #0052ff 0%, #00ff84 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(5) h2 {
+  background: #002bff;
+  background: linear-gradient(90deg, #002bff 0%, #2ebfff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(6) h2 {
+  background: #00ffc2;
+  background: linear-gradient(90deg, #00ffc2 0%, #47f9ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(7) h2 {
+  background: #a600ff;
+  background: linear-gradient(90deg, #a600ff 0%, #4747ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card:nth-child(8) h2 {
+  background: #0052ff;
+  background: linear-gradient(90deg, #0052ff 0%, #00ff84 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(16px);
+}
+.card .card-wrapper .card-header {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+.card .card-wrapper .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+.card .card-wrapper .card-body a,
+.card .card-wrapper .card-body button {
+  position: absolute;
+  bottom: 30px;
+  z-index: 1;
+  align-self: center;
+  width: 100px;
+}
+.card .card-wrapper .card-body a:hover,
+.card .card-wrapper .card-body button:hover {
+  background-color: #eaeaea;
+  color: #68a832;
+}
+.card .card-wrapper .card-body .card-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(234, 234, 234, 0.3);
+  color: #1c1c1c;
+  text-align: center;
+  line-height: 30px;
+  transform: translateY(600px);
+  transition: 200ms;
+}
+.card .card-wrapper .card-body .card-content .material-icons {
+  font-size: 2.5em;
+}
+.card .card-wrapper .card-body:hover .card-content {
+  transform: translateY(0);
+}
+
+body {
+  background: var(--bg-color);
+  color: #eaeaea;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.simplebar-scroll-content {
+  box-sizing: content-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 h1 {
   font-family: "Bungee", sans-serif;
 }
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 15px;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 3px;
+}
+
+button {
+  padding: 5px 20px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: 7px solid #eaeaea;
+  font-family: "Noto Sans", sans-serif;
+  color: #eaeaea;
+  font-size: 1.3em;
+  transition: 200ms;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.180e48a7.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.c60f1291.woff2) format('woff2'),
+       url(MaterialIcons-Regular.76e654d5.woff) format('woff'),
+       url(MaterialIcons-Regular.b480587f.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0;
+}
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+  max-width: 100%; /* Not required for horizontal scroll to trigger */
+  max-height: 100%; /* Needed for vertical scroll to trigger */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.simplebar-content:before,
+.simplebar-content:after {
+  content: ' ';
+  display: table;
+}
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: black;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto;
+}
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0;
+}
+
+.hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 /*# sourceMappingURL=app.03935a25.css.map */

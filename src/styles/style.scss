@@ -1,5 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans&display=swap');
+
+$cards: 8;
+
+:root {
+  --bg-color: #343434;
+  --color-dark: #1c1c1c;
+}
+
+@import './mixins.scss';
+@import './header.scss';
+@import './card.scss';
+
+body {
+  background: var(--bg-color);
+  color: #eaeaea;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.simplebar-scroll-content {
+  box-sizing: content-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 h1 {
   font-family: 'Bungee', sans-serif;
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 15px;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 3px;
+}
+
+button {
+  padding: 5px 20px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: 7px solid #eaeaea;
+  font-family: 'Noto Sans', sans-serif;
+  color: #eaeaea;
+  font-size: 1.3em;
+  transition: 200ms;
 }

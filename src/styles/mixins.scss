@@ -1,0 +1,67 @@
+@mixin cardTitleStyles {
+  @for $i from 1 through $cards {
+    @if $i % 4 == 1 {
+      &:nth-child(#{$i}) {
+        h2 {
+          background: rgb(0, 43, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(0, 43, 255, 1) 0%,
+            rgba(46, 191, 255, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    @if $i % 4 == 2 {
+      &:nth-child(#{$i}) {
+        h2 {
+          background: rgb(0, 255, 194);
+          background: linear-gradient(
+            90deg,
+            rgba(0, 255, 194, 1) 0%,
+            rgba(71, 249, 255, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    @if $i % 4 == 3 {
+      &:nth-child(#{$i}) {
+        h2 {
+          background: rgb(166, 0, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(166, 0, 255, 1) 0%,
+            rgba(71, 71, 255, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    @if $i % 4 == 0 {
+      &:nth-child(#{$i}) {
+        h2 {
+          background: rgb(0, 82, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(0, 82, 255, 1) 0%,
+            rgba(0, 255, 132, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
